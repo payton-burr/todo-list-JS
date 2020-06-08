@@ -16,7 +16,7 @@ function addTodo(e) {
 
   // add Li
   const newTodo = document.createElement('li');
-  newTodo.innerText = 'hello';
+  newTodo.innerText = todoInput.value;
   newTodo.classList.add('todo-item');
 
   todoDiv.appendChild(newTodo);
@@ -37,4 +37,7 @@ function addTodo(e) {
 
   // Append to UL
   todoList.appendChild(todoDiv);
+
+  // Clear Input
+  todoInput.value = '';
 }
